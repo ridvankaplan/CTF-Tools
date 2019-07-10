@@ -1,8 +1,9 @@
 # Rıdvan KAPLAN
 # The script for challenge on HackTheBox
-# Challange name is Eternal Loop
+# Challenge name is Eternal Loop
 # The link : https://www.hackthebox.eu/home/challenges/Misc
 # Challenge : Password of zip file is a name of next zip file and in eternal loop
+
 
 #!/bin/bash
 
