@@ -12,11 +12,11 @@ import hashlib
 
 
 def request():
-	# Target url : http://docker.hackthebox.eu:42765/
+	# Target url : http://docker.hackthebox.eu:42849/
 	# Regex : egrep '[a-zA-Z0-9]{20}'
 	url = 'http://docker.hackthebox.eu:42849/'
 	session = requests.session()
-	html = (session.get(url)).text
+	html = (session.get(url)).text # Source code in page
 	data = re.findall(r'[a-zA-Z0-9]{20}', str(html)) # String in page
 	md5 = (hashlib.md5(data[0].encode())).hexdigest()
 	requestPost(md5, url ,session)
